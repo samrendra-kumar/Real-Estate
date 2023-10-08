@@ -11,7 +11,7 @@ root.render(
     domain="dev-03sbejzb12rjytco.us.auth0.com"
     clientId="GzTfOnvvzpnMSKkYuTOckrffBIVTxitd"
     authorizationParams={{
-      redirect_uri:"https://real-estate-cujo-neeyuy4l8-samrendra-kumar.vercel.app"
+      redirect_uri:"https://real-estate-cujo.vercel.app/"
       
     }}
       audience="http://localhost:4000"
