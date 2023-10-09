@@ -9,11 +9,12 @@ import Facilities from '../Facilities/Facilities';
 const AddPropertyModal = ({opened,setOpened}) => {
     const[active,setActive]= useState(0);
     const{user} = useAuth0() ;
-
+    
     const [propertyDetails, setPropertyDetails] = useState({
         title: "",
         description: "",
         price: 0,
+       
         country: "",
         city: "",
         address: "",
@@ -23,7 +24,7 @@ const AddPropertyModal = ({opened,setOpened}) => {
           parkings: 0,
           bathrooms: 0,
         },
-        userEmail: user?.email,
+       // userEmail:user?.email,
       });
 
       const nextStep=()=>{
@@ -54,6 +55,7 @@ const AddPropertyModal = ({opened,setOpened}) => {
               setPropertyDetails={setPropertyDetails}
             />
           </Stepper.Step>
+         
           <Stepper.Step label="Images" description="Upload ">
             <UploadImage
               prevStep={prevStep}
@@ -86,6 +88,7 @@ const AddPropertyModal = ({opened,setOpened}) => {
             Completed, click back button to get to previous step
           </Stepper.Completed>
         </Stepper>
+        
    </Container>
    </Modal>
   )

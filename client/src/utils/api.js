@@ -170,7 +170,8 @@ export const createResidency = async(data,token)=>{
      const res = await api.post(
         `/residency/create` ,
         {
-            data
+            data,
+            
         },
         {
             headers:{
@@ -179,6 +180,7 @@ export const createResidency = async(data,token)=>{
         }
      )
      console.log("resdata",data )
+     return data ;
     }catch(error)
     {
        throw error 

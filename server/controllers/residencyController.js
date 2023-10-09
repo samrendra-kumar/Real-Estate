@@ -15,7 +15,8 @@ exports.createResidency=async(req,res)=>{
       city,
      facilities,
      image,
-      userEmail}= req.body.data ;
+    // userEmail,
+      }= req.body.data ;
       console.log(req.body.data) ;
    try{
     const newresidency = new  Residency({
@@ -28,7 +29,7 @@ exports.createResidency=async(req,res)=>{
         city,
         facilities,
         image,
-       userEmail,
+       //userEmail,
       
       }
     );

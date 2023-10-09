@@ -7,6 +7,7 @@ import useProperties from "../../hooks/useProperties.jsx";
 import { useMutation } from "react-query";
 import { toast } from "react-toastify";
 import { createResidency } from "../../utils/api";
+
 const Facilities = ({
   prevStep,
   propertyDetails,
@@ -67,7 +68,7 @@ const Facilities = ({
           parkings: 0,
           bathrooms: 0,
         },
-        userEmail: user?.email,
+       // userEmail: user?.email
       })
       setOpened(false)
       setActiveStep(0)

@@ -42,10 +42,10 @@ const residencySchema = new mongoose.Schema(
     },
     required: true
   },
-  userEmail:{
-    type:String ,
-    required:true ,
-  },
+  //userEmail:{
+  //  type:String ,
+  //  required:true,
+  //},
   
   createdAt:{
     type:Date,
